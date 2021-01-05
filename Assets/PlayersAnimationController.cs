@@ -10,23 +10,24 @@ public class PlayersAnimationController : MonoBehaviour
     {
         anim = this.GetComponent<Animator>();
     }
-    public void enableFirstPlayersImage()
+    public void EnableFirstPlayersImage()
     {
         anim.SetTrigger("PickFirstPlayer"); 
     }
 
-    public void disableFirstPlayersImage()
+    public void DisableImage()
     {
         anim.SetTrigger("BackToNormal");
     }
 
-    public void enableSecondPlayersImage()
+    public void EnableSecondPlayersImage()
     {
         anim.SetTrigger("PickSecondPlayer");
     }
 
-    public void disableSecondPlayersImage()
+    public void PickTextColorChange()
     {
-        anim.SetTrigger("BackToNormal");
+        anim.SetTrigger("PickTextColorChange");
     }
+
 }
